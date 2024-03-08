@@ -1,0 +1,94 @@
+.footer{
+    background-color: #000000;
+    padding: 50px 5% 30px 5%;
+    color: white;
+    font-weight: 500;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.contacto p, .contacto a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contacto i{font-size: 18px;}
+
+.ayto img{max-width: 250px}
+
+.footer .enlaces{
+    display:flex;
+    padding: 0 1rem;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.footer .enlaces a{
+    color: white;
+    padding: 6px 16px 8px 16px;
+}
+
+.footer .enlaces a:hover{
+    color: #1a171b;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.footer .redes{
+    display:flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer .redes img{height: 16px;}
+
+
+.footer .redes img:hover{transform: scale(1.15);}
+
+
+@media (max-width: 1024px) {
+    .ayto img{
+        max-width: 200px;
+        margin-left:50px;
+    }
+}
+
+@media (max-width: 768px) { 
+    .footer{padding: 30px 5%;}
+    .flex{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        margin-left: 15px;
+    }
+    .ayto img{
+        max-width: 200px;
+        margin-left:0px;
+    }
+
+    .footer .enlaces{
+        flex-wrap: wrap;
+    padding: 0px;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 15px 10px 15px;
+    }
+    .footer .enlaces a{padding: 0px;}
+}

@@ -1,0 +1,629 @@
+.main{
+    width: 100%;
+    margin: 80px auto;
+}
+
+.cabecera{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+}
+
+.cabecera img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.cabecera h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 72px;
+    font-size: 900;
+}
+
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 5%;
+}
+
+.encabezado h1{font-size: 42px;}
+
+.encabezado .apartados{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.encabezado .apartados a{
+    border: 1px solid black;
+    padding: 3px 15px 5px 15px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.encabezado .apartados a:hover{
+    background-color: black;
+    color: white;
+}
+
+.carousel {
+    width: 100%;
+    position: relative;
+    height: calc(100vh - 280px);
+    overflow: hidden;
+}
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mainGastronomia{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainGastronomia section{
+    width: 70%;
+}
+
+.mainGastronomia article{
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.mainGastronomia p{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.mainGastronomia h2{margin: 50px 0 10px 0;}
+
+.mainGastronomia h3{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.mainGastronomia article div{
+    margin-bottom: 25px;
+}
+
+.mainGastronomia article p{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.mainGastronomia article p:first-child{font-size: 18px;}
+
+.mainGastronomiaApartados{
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 10px 5% 50px 5%;
+    margin: 100px 0 0 0;
+}
+
+.mainGastronomiaApartados section{width: 100%;}
+.mainGastronomiaApartados h2{font-size: 28px;}
+
+.mainGastronomiaApartados section div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mainGastronomiaApartados section a{
+    width: 23%;
+    overflow: hidden;
+}
+
+.mainGastronomiaApartados section a div{
+    height: 300px;
+    overflow: hidden;
+}
+
+.mainGastronomiaApartados section img{
+    width: 100%;
+    display: block;
+    object-fit: cover; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 300px;
+    transition: transform 0.3s ease;
+}
+
+.mainGastronomiaApartados a:hover img{transform: scale(1.1);}
+
+.mainGastronomiaApartados section h3{
+    background-color: #1CA28E;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 100px;
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10), 0px 0px 16px 0px rgba(0, 0, 0, 0.09), 0px -4px 21px 0px rgba(0, 0, 0, 0.05), 0px 10px 0px 0px rgba(0, 0, 0, 0.01), 0px 0px 0px 0px rgba(0, 0, 0, 0.00);
+}
+
+.mainGastronomiaApartados a .naranja{background-color: #EF7D2F; }
+
+.mainGastronomiaApartados .masMovil{display: none;}
+.mainGastronomiaApartados .mas{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mainGastronomiaApartados .mas a{
+  width: auto;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+
+.mainGastronomiaApartados .mas a:hover{color: white;}
+.mainGastronomiaApartados .turquesa a:hover{background-color: #1CA28E; }
+.mainGastronomiaApartados .naranja a:hover{background-color: #EF7D2F; }
+.mainGastronomiaApartados .establecimeintos{margin-top: 35pxpx;}
+
+.agenda h1{
+    width: 90%;
+    top: 35%;
+}
+
+.agenda{height: 60vh;}
+.agenda img{filter: brightness(0.35);}
+
+.contenido{ padding: 80px 5%;}
+
+.contenido h2, .contenido h3{margin-bottom: 15px;}
+
+.contenido p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.flex{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.flex:last-child{margin-bottom: 30px;}
+
+.flex img{
+    width: 40%;
+    max-height: 400px;
+}
+
+.flex .masAncho{
+    width: 55%;
+    max-height: 400px;
+}
+
+.iconosContacto{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.iconosContacto p{margin-bottom: 8px;}
+.iconosContacto a{font-size: 18px;}
+.contenido i{color: #EF7D2F;}
+
+.contenido .mapa{
+    width: 58%;
+    border: none;
+}
+
+.orden img{order: 1;}
+.orden div{order: 0;}
+
+.presentacion{width: 80%;}
+
+.contenido li{
+    margin-left: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.categorias{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0 50px 0;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+}
+
+.categorias .pregunta{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.categorias .sugerencia{
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.categorias .desplegables{
+    display: flex;
+    justify-content: space-between;
+}
+
+.categorias select{
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 49%;
+    background-color: #ffffffa8;
+}
+
+.categorias option{
+    font-size: 16px;
+    margin: 5px 0;
+    background-color: #ffffffa8;
+}
+
+.categorias select:focus {outline: none;}
+  
+.listadoEventos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.evento {
+    position: relative;
+    height: auto; 
+    border-radius: 18px;
+    margin: 10px 0; 
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.evento .imagenEvento{overflow: hidden;}
+  
+.evento img{
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    filter: brightness(0.4);
+    transition: transform 0.3s ease;
+}
+
+.evento:hover img{transform: scale(1.1); z-index: 4000;}
+
+.evento h2 {
+  position: absolute;
+  bottom: 130px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 90%;
+  font-size: 42px;
+  font-weight: 800;
+  z-index: 1000;
+  color: white;
+}
+  
+.evento .datos{
+  color: #002E38;
+  bottom: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 18px 20px;
+  background-color: rgba(19, 158, 213, 0.1);
+  width: 100%;
+  height: 125px;
+  z-index: 8000;
+}
+
+.categoriasEvento{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+  
+.evento .categoria{
+  display: inline;
+  font-size: 14px;
+  background: linear-gradient(135deg, rgba(19, 158, 213, 1) 15%, rgba(52, 168, 64, 1) 60%);
+  color: white;
+  border-radius: 48px;
+  padding: 2px 15px 6px 15px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+    
+.evento .fecha,  .evento .ubicacion{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.evento .fecha{ margin: 20px 0 10px 0;}
+.evento i{color: #002E38; font-size: 18px;}
+
+
+.mantenimiento{
+    background-color: rgba(0, 0, 0, 0.596);
+}
+
+.mantenimiento a{
+    display: block;
+    margin: 100px auto;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.596);
+    background-color: white;
+    padding: 20px 35px;
+    border-radius: 12px;
+    width: fit-content;
+}
+
+.mantenimiento a:hover{
+    background-color: rgba(0, 0, 0, 0.596);
+    color: white;
+}
+
+.mantenimiento h1{
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 100px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.barra{
+    color: white;
+    width: 60%; 
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 0 auto;
+}
+
+.progressbar {
+    width: 60%; 
+    display: flex;
+    gap: 10px;
+    background-color: #e0e0e0b9;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1); 
+}
+
+.progress {
+    height: 20px; /* Altura de la barra de progreso */
+    background-color: #fff; /* Color de la barra de progreso llenada */
+    border-radius: 4px; /* Redondea las esquinas de la barra llenada */
+    transition: width 0.4s ease; /* Transición suave para los cambios de ancho */
+}
+
+
+@media (max-width: 1024px) {
+    .mainGastronomia section{width: 65%;}
+    .mainGastronomia article{width: 30%;}
+    .mainGastronomiaApartados section{width: 100%;}
+    .mainGastronomiaApartados section a div{height: 200px;}
+    .mainGastronomiaApartados section img{height: 200px;}
+    .mainGastronomiaApartados section h3{padding: 12px 16px;}
+}
+
+@media (max-width: 950px) {
+    .agenda h1{
+        font-size: 62px;
+        top: 25%;
+    }
+
+    .categorias{
+        top: 40%;
+        width: 60%;
+    }
+      
+    .evento img{ height: 225px;}
+    
+    .evento h2 {
+      bottom: 120px;
+      font-size: 24px;
+    }
+
+    .mainGastronomia{flex-direction: column; margin: 50px auto 80px auto; gap: 40px;}
+    .mainGastronomia section, .mainGastronomia article{width: 100%;}
+    
+    .mainGastronomia article{padding: 25px 30px 0px 30px;}
+    .mainGastronomiaApartados h2{font-size: 28px; margin-top: 30px;}
+}
+
+
+
+@media (max-width: 820px) {
+
+.contenido{  padding: 50px 5% 30px 5%;}
+.contenido h2, .contenido h3{margin-bottom: 10px;}
+
+.contenido p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.flex{
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.flexMovil{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.flex img{width: 100%;}
+.iconosContacto{margin-left: 50px;}
+.iconosContacto p{margin-bottom: 3px;}
+.contenido .mapa{width: 100%; height: 300px;}
+
+.llegar .flex:nth-child(odd) img{order: 1;}
+.llegar .flex:nth-child(odd) div{order: 0;}
+
+.presentacion{width: 100%;}
+
+.agenda{height: 40vh;}
+.agenda h1{font-size: 52px;}
+.categorias{width: 70%;}
+  
+.evento img{ height: 200px;}
+.evento:hover img{transform: scale(1.1); z-index: 4000;}
+.evento h2 {font-weight: 700; bottom: 165px;}
+  
+.evento .datos{
+  padding: 12px 15px;
+  height: 170px;
+}
+
+.evento .fecha{ margin: 10px 0;}
+
+.mainGastronomia{margin-top: 30px;  gap: 30px;}
+.mainGastronomiaApartados section a div{height: 150px;}
+.mainGastronomiaApartados section img{height: 150px;}
+.mainGastronomiaApartados section h3{padding: 10px 14px; font-size: 21px; margin-bottom: 10px;}
+.mainGastronomiaApartados .mas a{font-size: 16px;}
+.mainGastronomiaApartados .establecimeintos{margin-top: 0px;}
+.mainGastronomiaApartados{margin-bottom: 0px;}
+}
+
+@media (max-width: 768px) {
+    .encabezado div:first-child{order: 1; margin-top: 25px;}
+    .encabezado div:last-child{order: 0;}
+    .encabezado{flex-direction: column;}
+    .encabezado h1{font-size: 36px;}
+    .encabezado .apartados{flex-wrap: wrap; margin-top: 8px;}
+
+    .mainGastronomiaApartados section a{width: 48%; display: flex;}
+    .mainGastronomiaApartados section a div{width: 45%;}
+    .mainGastronomiaApartados section a div, .mainGastronomiaApartados section img, .mainGastronomiaApartados section h3{ height: 120px;}
+    
+    .mainGastronomiaApartados section img{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        width: 100%;
+        
+    }
+
+    .mainGastronomiaApartados section h3{
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+        width: 55%;
+    }
+}
+
+@media (max-width: 678px) {
+    .agenda{height: 40vh;}
+    .categorias{width: 80%;}
+    .categorias .sugerencia{
+        font-size: 21px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+      
+    .evento img{ height: 180px;}
+    .evento:hover img{transform: scale(1.1); z-index: 4000;}
+    .evento h2 {font-weight: 700; bottom: 145px;}
+      
+    .evento .datos{
+      padding: 12px 15px;
+      height: 150px;
+    }
+
+    .listadoEventos {grid-template-columns: repeat(2, 1fr);}
+
+    .mainGastronomiaApartados section a div{width: 40%;}
+    .mainGastronomiaApartados section h3{width: 60%;}
+}
+
+
+@media (max-width: 540px) {
+    .cabecera h1{font-size: 36px; line-height: 1.2;}
+    .agenda h1{font-size: 32px; line-height: 1.2;}
+    .flexMovil{ flex-direction: column;}
+    .iconosContacto{margin-left: 0px;}
+    .contenido .mapa{height: 250px;}
+
+    .agenda{height: 50vh;}
+    .categorias{width: 90%;}
+    .categorias .desplegables{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .categorias select{
+        width: 100%;
+        height: 42px;
+        padding: 5px 15px;
+    }
+
+    .listadoEventos {grid-template-columns: repeat(1, 1fr); 
+        grid-gap: 0px;}
+    .evento h2 {bottom: 120px;}
+    .evento .datos{height: 118px;}
+
+
+    .encabezado .apartados{gap: 5px;}
+    .encabezado .apartados a{font-size: 16px;}
+    .mainGastronomia{margin: 20px auto 50px auto; gap: 20px;}
+    .mainGastronomia p{font-size: 16px; line-height: 1.5;}
+    .mainGastronomia h2{margin-top: 35px;}
+    .mainGastronomiaApartados{margin-bottom: 0px;}
+    .mainGastronomiaApartados section a{width: 100%; }
+
+    .mainGastronomiaApartados .mas{display: none;}
+    .mainGastronomiaApartados .masMovil a{display: block;}
+
+    .mainGastronomiaApartados .masMovil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 80%;
+    padding: 6px;
+    border: none;
+    border-radius: 24px;
+    margin: 15px auto 0 auto;
+    background-color: #1CA28E;
+    color: white;
+    font-size: 18px;
+    }  
+
+    .mainGastronomiaApartados .masMovil.naranja{background-color: #EF7D2F;}
+
+}

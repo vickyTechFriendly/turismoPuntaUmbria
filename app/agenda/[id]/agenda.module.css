@@ -1,0 +1,248 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.cabecera{
+    position: relative;
+    width: 100vw;
+    height: 40vh;
+}
+
+.cabecera img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+}
+
+.noticia h1{
+    font-size: 36px;
+    margin: 30px 0px 75px 0px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.cabecera h1{
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    color: white;
+    font-size: 48px;
+    font-size: 900;
+    width: 80%;
+}
+
+.datos{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.categorias{
+    display: flex;
+    gap: 8px;
+}
+
+.main .categoria{
+    display: inline;
+    font-size:14px;
+    background: linear-gradient(135deg, rgba(52, 168, 64, 1) 15%, rgba(19, 158, 213, 1) 60%);
+    border-radius: 18px;
+    padding: 4px 20px;
+    color: white;
+}
+
+.main .derecha{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e7e7e7;
+    padding: 4px 15px 3px 15px;
+    border-radius: 18px;
+    gap: 10px;
+}
+
+.main .derecha img{border-radius: 0px;}
+
+.evento{
+    padding: 3rem 10% 0rem 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pdfSection, .galeria{padding: 1rem 10% 2rem 10%;}
+
+.descripcion{margin-top: 35px;}
+
+.noticiaTexto{
+    width: 65%;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.detalles{
+    width: 30%;
+    background-color: #e7e7e7;
+    border-radius: 12px;
+    padding: 15px 25px 25px 25px;
+    height: fit-content;
+}
+
+.detalles hr{margin-bottom: 20px;}
+
+.detalles p{
+    font-size: 16px;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.masInformacion{
+    margin-top: 25px; 
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    gap: 10px;
+    width: 120px;
+}
+
+.galeria{
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    width: 80%;
+    margin: 50px auto 0 auto;
+}
+
+.imageContainer {cursor: pointer;}
+
+.imageContainer img{
+    width: 300px;
+    height: auto;
+}
+
+.fullscreenContainer {position: relative;}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.fullscreenImage {
+    max-width: 90%;
+    max-height: 90%;
+    cursor: pointer;
+}
+
+.clickableImage {cursor: pointer;}
+
+.closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #0051ba00;
+}
+
+.fullscreenOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreenImage {
+    max-width: 90%;
+    max-height: 90%;
+    cursor: pointer;
+}
+
+.ultimasNoticias{ 
+    margin-top: 100px;
+    width: 100%;
+}
+
+
+@media (max-width: 1024px) {
+    .main {
+        padding: 1rem 7.5%;
+    }
+    .modal img {
+        max-width: 700px;
+      }
+      
+}
+
+@media (max-width: 820px) {
+    .galeria{
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    .imagenes{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start; 
+        gap: 10px;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    
+      .imageContainer img{
+        max-width: 80px;
+        max-height: 50px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 760px) {
+    .main {
+        padding: 1rem 5%;
+    }
+    .contenido{
+        margin-top: 10px;
+    }
+    .noticia h1{
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    .noticia img{
+        max-height: 180px;
+    }
+    .main .categoria{
+        padding: 4px 15px 0px 15px;
+    }
+    .ultimasNoticias h2{
+        margin-bottom: 20px;
+    }
+}

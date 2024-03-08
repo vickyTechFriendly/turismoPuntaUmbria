@@ -1,0 +1,56 @@
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    font-size: 14px;
+}
+
+.contacto{
+    display: flex;
+    gap: 50px;
+}
+
+.redes{
+    display: flex;
+    gap: 18px;
+}
+
+.redes a{
+    width: 31px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8c0799;
+    border-radius: 50%;
+}
+
+.redes i{
+    font-size: 18px;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .main{
+        padding: 20px 5%;
+    }  
+}
+
+
+@media (max-width: 760px) {
+    .contacto{
+        gap: 25px;
+    }
+
+    .redes{
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contacto{
+       flex-direction: column;
+       gap: 2px;
+    }
+}
